@@ -1,0 +1,582 @@
+@font-face { 
+    font-family: 'SofiaSans';
+    src: url(../fonts/SofiaSansSemiCondensed-Light.woff2) format('woff2'), 
+    url(../fonts/SofiaSansSemiCondensed-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-display: swap;
+} 
+
+@font-face { 
+    font-family: 'SofiaSans';
+    src: url(../fonts/SofiaSansSemiCondensed-Regular.woff2) format('woff2'),
+     url(../fonts/SofiaSansSemiCondensed-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-display: swap;
+} 
+
+@font-face { 
+    font-family: 'SofiaSans';
+    src: url(../fonts/SofiaSansSemiCondensed-Bold.woff2) format('woff2'), 
+    url(../fonts/SofiaSansSemiCondensed-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-display: swap;
+} 
+
+@font-face { 
+    font-family: AbyssinicaSIL;
+    src: url(../fonts/AbyssinicaSIL-Regular.woff2) format('woff2'), 
+    url(../fonts/AbyssinicaSIL-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* HEADER START */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    height: 7.81vw;
+
+    border-bottom: 1px solid #fff;
+
+    justify-content: center;
+
+    z-index: 10;
+}
+
+.header__wr-nav {
+    display: flex;
+    width: 85%;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block;
+    width: 5.36vw;
+    height: 5.36vw;
+}
+
+.logo img {
+    object-fit: contain;
+    object-position: center;
+}
+
+.nav {
+    width: 47%;
+}
+
+ul.nav__list {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.nav__item {
+    display: flex;
+    height: 2.60vw;
+    width: 8.75vw;
+
+    border-radius: 1.56vw;
+    border: 2px solid #FFF;
+
+    overflow: hidden;
+}
+
+.nav__item-link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    font-family: 'SofiaSans';
+    font-size: 1.25vw;
+    font-weight: 400;
+
+    color: #fff;
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* HEADER END */
+
+/* ////////////////  MAIN   ///////////////// */
+
+/* SLIDER HEAD START */
+
+.slider-h {
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+.slider-h__slides {
+    height: 100%;
+}
+
+.slider-h__slides-list {
+    display: flex;
+    height: 100%;
+
+    background: gray;
+}
+
+.slider__slide-item {
+    width: 100%;
+}
+
+.slider__slide-item img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.slider-h__arrows-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    width: 87.5%;
+
+    transform: translate(-50%, -50%);
+
+    justify-content: center;
+    align-items: flex-end;
+
+    pointer-events: none;
+}
+
+.slider-h__wr-name-site {
+    display: flex;
+
+    line-height: 1;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-h__wr-name-site-descr {
+    display: flex;
+    gap: 1.20vw;
+}
+
+.slider-h__name-site-lines {
+    display: flex;
+    gap: 0.42vw;
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slider-h__name-site-line {
+    height: 1.5px;
+    width: 3.18vw;
+} 
+
+.slider-h__name-site-line_top {
+    background-color: #fff;
+}
+
+.slider-h__name-site-line_bottom {
+    background-color: #F1551C;
+}
+
+.slider-h__name-site-descr {
+    font-family: 'SofiaSans';
+    font-size: 2.08vw;
+    font-style: normal;
+    font-weight: 300;
+
+    color: #FFF;
+}
+
+.slider-h__name-site {
+    font-family: AbyssinicaSIL;
+    font-weight: 400;
+    font-size: 6.67vw;
+
+    text-shadow: -0.26vw 0.26vw 0px rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.slider__arrow {
+    display: none;
+    width: 4.17vw;
+    height: 4.17vw;
+
+    cursor: pointer;
+    pointer-events: initial;
+}
+
+.slider-h__pagination {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5.16vw;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.slider-h__pagination-list {
+    display: flex;
+    gap: 4.32vw;
+}
+
+.slider-h__pagination-item {
+    display: flex;
+    gap: 0.73vw;
+
+    align-items: center;
+    cursor: pointer;
+}
+
+.slider-h__pagination-icon {
+    height: 3.13vw;
+    width: 3.13vw;
+    
+    background: no-repeat url(../img/icon/arrow-pag_icon.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.slider-h__pagination-text {
+    width: 12.40vw;
+
+    color: #FFF;
+
+    font-family: 'SofiaSans';
+    font-size: 0.83vw;
+    font-weight: 300;
+
+    color: #fff;
+}
+
+
+.slider-h__line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    height: 0.31vw;
+
+    justify-content: center;
+}
+
+.slider-h__nav-line {
+    position: relative;
+
+    display: flex;
+    width: 85%;
+
+    border-radius: 0.16vw;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    overflow: hidden;
+}
+
+.slider-h__nav-line-item {
+    height: 100%;
+    width: 0;
+
+    background: #fff;
+    border-radius: 0.16vw;
+}
+
+
+/* SLIDER HEAD END */
+
+
+
+.products {
+    position: relative;
+
+    display: flex;
+    padding-top: 2.81vw;
+    padding-bottom: 2.97vw;
+
+    background:no-repeat url(../img/roasteria-side.png), #483D41;
+    background-position: right 2.08vw top 0.5vw;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__wr-slider-top {
+    position: relative;
+
+    width: 85%;
+
+    z-index: 5;
+}
+
+.products__side-deco {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 41.5%;
+
+    background-color: #6B6462;
+
+    z-index: 0;
+}
+.sl-prod {
+    display: flex;
+    gap: 2.5vw;
+}
+
+.sl-prod__big-img {
+    position: relative;
+
+    width: 21.46vw;
+    min-width: 21.46vw;
+    padding-top: 1.98vw;
+}
+
+.sl-prod__big-img img {
+    position: relative;
+
+    width: 100%;
+}
+
+.sl-prod__big-img_deco {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+
+    height: 87%;
+    width: 80%;
+
+    box-shadow: 0.78vw 1.04vw 3.02vw 0.63vw rgba(0, 0, 0, 1);
+
+    transform: translate(-50%, -50%);
+}
+
+.sl-prod__wr-descr-preview {
+    display: flex;
+
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.sl-prod__text-about {
+    width: 66.2%;
+    padding-right: 14.6%;
+
+    align-self: flex-end;
+}
+
+.sl-prod__title {
+    font-family: 'SofiaSans';
+    font-size: 2.08vw;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #F1551C;
+}
+
+.sl-prod__description {
+    margin-top: 2.29vw;
+}
+
+.sl-prod__taste-title {
+    font-family: 'SofiaSans';
+    font-size: 1.25vw;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #FFF;
+}
+
+.sl-prod__taste-text {
+    font-family: 'SofiaSans';
+    font-size: 1.25vw;
+    font-weight: 400;
+
+    color: #FFF;
+}
+
+.sl-prod__aroma {
+    margin-top: 2.08vw;
+}
+
+.sl-prod__aroma-title {
+    font-family: 'SofiaSans';
+    font-size: 1.25vw;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #FFF;
+}
+
+.sl-prod__aroma-text {
+    font-family: 'SofiaSans';
+    font-size: 1.25vw;
+    font-weight: 400;
+
+    color: #FFF;
+}
+
+.sl-prod__line {
+    width: 100%;
+    height: 1.5px;
+    margin-top: 1.41vw;
+
+    background-color: #A59F9E;;
+}
+
+.sl-prod__character-list {
+    margin-top: 1.20vw;
+}
+
+.sl-prod__character-item {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.sl-prod__prop {
+    font-family: 'SofiaSans';
+    font-size: 1.25vw;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    color: #FFF;
+}
+
+.sl-prod__val {
+    font-family: 'SofiaSans';
+    font-size: 1.25vw;
+    font-weight: 400;
+
+    color: #FFF;
+}
+
+
+
+
+.sl-prod__wr-prev {
+    position: relative;
+
+    height: 25.2vw;
+}
+
+.sl-prod__wr-slides {
+    height: 100%;
+    padding-left: 0.65vw;
+
+    overflow: hidden;
+}
+
+.sl-prod__slides {
+    display: flex;
+    gap: 3.49vw;
+
+    align-items: center;
+}
+
+.sl-prod__slide {
+    display: flex;
+
+    width: 14.58vw;
+    height: 21.35vw;
+
+    border-radius: 0.42vw;
+    background: #726B68;
+    box-shadow: 0.78vw 0.78vw 0.94vw 0.36vw rgba(0, 0, 0, 0.3);
+
+    transition: height 0.3s linear,
+    width 0.3s linear;
+
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.sl-prod__slide_active {
+    min-width: 16.15vw;
+    height: 22.92vw;
+}
+
+.sl-prod__wr-img-slide {
+    width: 6.20vw;
+    height: 13.18vw;
+    margin-top: 1.25vw;
+}
+
+.sl-prod__slide_active .sl-prod__wr-img-slide {
+    width: 42%;
+    height: 63.4%;
+}
+
+.sl-prod__img-slide {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+.sl-prod__wr-title-slide {
+    margin-top: 0.83vw;
+}
+
+.sl-prod__title-slide {
+    font-family: 'SofiaSans';
+    font-size: 1.25vw;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #A59F9E;
+}
+
+.sl-prod__wr-button-slide {
+    margin-top: 1.04vw;
+}
+
+.sl-prod__button-slide {
+    display: flex;
+    width: 8.75vw;
+    height: 2.60vw;
+
+    font-family: 'SofiaSans';
+    font-size: 1.04vw;
+    font-weight: 400;
+
+    color: #fff;
+    border-radius: 1.56vw;
+    background: #F1551C;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15),
+     5px 3px 6px 0px rgba(0, 0, 0, 0.13),
+      11px 7px 8px 0px rgba(0, 0, 0, 0.08),
+       20px 12px 9px 0px rgba(0, 0, 0, 0.02),
+        31px 18px 10px 0px rgba(0, 0, 0, 0.00);
+
+    justify-content: center;
+    align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map*/
