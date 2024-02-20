@@ -73,6 +73,9 @@ a {
 }
 
 .logo img {
+    height: 100%;
+    width: 100%;
+
     object-fit: contain;
     object-position: center;
 }
@@ -354,6 +357,12 @@ ul.nav__list {
     width: 21.46vw;
     min-width: 21.46vw;
     padding-top: 1.98vw;
+
+    opacity: 0;
+}
+
+.sl-prod__big-img_visible {
+    opacity: 1;
 }
 
 .sl-prod__big-img img {
@@ -367,7 +376,7 @@ ul.nav__list {
     top: 53%;
     left: 50%;
 
-    height: 87%;
+    height: 84%;
     width: 80%;
 
     box-shadow: 0.78vw 1.04vw 3.02vw 0.63vw rgba(0, 0, 0, 1);
@@ -387,6 +396,12 @@ ul.nav__list {
     padding-right: 14.6%;
 
     align-self: flex-end;
+
+    opacity: 0;
+}
+
+.sl-prod__text-about_visible {
+    opacity: 1;
 }
 
 .sl-prod__title {
@@ -482,6 +497,7 @@ ul.nav__list {
     position: relative;
 
     height: 25.2vw;
+    margin-top: 2.97vw;
 }
 
 .sl-prod__wr-slides {
@@ -508,28 +524,20 @@ ul.nav__list {
     background: #726B68;
     box-shadow: 0.78vw 0.78vw 0.94vw 0.36vw rgba(0, 0, 0, 0.3);
 
-    transition: height 0.3s linear,
-    width 0.3s linear;
-
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
 }
 
 .sl-prod__slide_active {
-    min-width: 16.15vw;
+    width: 16.15vw;
     height: 22.92vw;
 }
 
 .sl-prod__wr-img-slide {
-    width: 6.20vw;
-    height: 13.18vw;
+    width: 42.528%; /*6.20vw*/
+    height: 61.845%; /*13.18vw*/
     margin-top: 1.25vw;
-}
-
-.sl-prod__slide_active .sl-prod__wr-img-slide {
-    width: 42%;
-    height: 63.4%;
 }
 
 .sl-prod__img-slide {
@@ -554,7 +562,31 @@ ul.nav__list {
 }
 
 .sl-prod__wr-button-slide {
+    position: relative;
+
     margin-top: 1.04vw;
+}
+
+.sl-prod__wr-button-slide-deco {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+    width: 120%;
+    height: 100%;
+
+    opacity: 0;
+
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(114, 107, 104, 0.04) 15.09%, rgba(114, 107, 104, 0.8));
+
+    transform: translate(-50%, 12%);
+
+    pointer-events: none;
+}
+
+.sl-prod__slide_active .sl-prod__wr-button-slide-deco {
+    opacity: 1;
 }
 
 .sl-prod__button-slide {
@@ -578,5 +610,7 @@ ul.nav__list {
     justify-content: center;
     align-items: center;
 }
+
+/* добавить тень на кнопку активной карточки */
 
 /*# sourceMappingURL=style.css.map*/
