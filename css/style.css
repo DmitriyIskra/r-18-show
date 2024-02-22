@@ -738,6 +738,10 @@ ul.nav__list {
 
     transform: rotateY(21deg);
 }
+
+.sl-p__slide-item_prev-l .sl-p__card-mask {
+    background-color: rgba(49, 49, 49, 0.25);
+}
 /* -- */
 
 /* -- */
@@ -810,6 +814,10 @@ ul.nav__list {
     box-shadow: 1.46vw 1.46vw 2.34vw rgba(0, 0, 0, 0.4);
 
     transform: rotateY(-21deg);
+}
+
+.sl-p__slide-item_next-r .sl-p__card-mask {
+    background-color: rgba(49, 49, 49, 0.25);
 }
 /* -- */
 
