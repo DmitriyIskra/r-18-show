@@ -891,8 +891,6 @@ ul.nav__list {
     width: 16.72vw;
     height: 19.32vw;
 
-    transition: width 0.5s linear 0.5s, height 0.5s linear 0.5s;
-
     flex-direction: column;
 }
 
@@ -942,19 +940,16 @@ ul.nav__list {
     width: 100%;
     margin-top: 1.09vw;
 
-    
-
     flex-direction: column;
     align-items: center;
 
     overflow: hidden;
-    opacity: 0;
 }
 
 .sl-p__slide-item_prev .sl-p__card-wr-content {
     height: 0;
 
-    transition: opacity 0.7s linear, height 1.5s linear 0.7s;
+    transition: opacity 0.5s linear, height 1s linear 0.5s;
 
     opacity: 0;
 }
@@ -962,7 +957,7 @@ ul.nav__list {
 .sl-p__slide-item_active .sl-p__card-wr-content {
     height: 100%;
     
-    transition: height 1.5s linear, opacity 0.7s linear 0.7s;
+    transition: height 0.5s linear, opacity 0.5s linear 0.5s;
 
     opacity: 1;
 }
@@ -970,7 +965,7 @@ ul.nav__list {
 .sl-p__slide-item_next .sl-p__card-wr-content {
     height: 0;
 
-    transition: opacity 0.7s linear, height 1.5s linear 0.7s;
+    transition: opacity 0.5s linear, height 1s linear 0.5s;
 
     opacity: 0;
 }
@@ -1023,16 +1018,32 @@ ul.nav__list {
 
     align-self: center;
 
-    transition: height 0.5s linear, opacity 0.5s linear 0.5s;
-
     opacity: 0;
     overflow: hidden;
+}
+
+.sl-p__slide-item_prev .sl-p__card-slider-pag-list {
+    height: 0;
+
+    transition: opacity 0.25s linear, height 0.25s linear 0.25s;
+
+    opacity: 0;
 }
 
 .sl-p__slide-item_active .sl-p__card-slider-pag-list {
     height: 0.52vw;
 
+    transition: height 0.25s linear, opacity 0.25s linear 0.25s;
+
     opacity: 1;
+}
+
+.sl-p__slide-item_next .sl-p__card-slider-pag-list {
+    height: 0;
+
+    transition: opacity 0.25s linear, height 0.25s linear 0.25s;
+
+    opacity: 0;
 }
 
 .sl-p__card-slider-pag-item {
