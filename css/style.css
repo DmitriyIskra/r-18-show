@@ -1061,12 +1061,25 @@ ul.nav__list {
     pointer-events: none;
 }
 
+.sl-p__card-slider-color-list {
+    display: flex;
+    gap: 1.20vw;
+
+    flex-direction: column;
+}
+
+.sl-p__card-slider-color-item {
+    width: 26px;
+    height: 26px;
+}
+
 .sl-p__card-content p {
     margin-top: 0.68vw;
 
     font-family: 'SofiaSans';
     font-size: 0.83vw;
     font-weight: 400;
+    text-align: center;
 
     color: #3F3937;
 }
