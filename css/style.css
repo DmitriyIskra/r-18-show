@@ -1062,15 +1062,40 @@ ul.nav__list {
 }
 
 .sl-p__card-slider-color-list {
+    position: absolute;
+    top: 6.5%;
+    right: 5%;
+
     display: flex;
     gap: 1.20vw;
 
     flex-direction: column;
+
+    z-index: 2;
 }
 
 .sl-p__card-slider-color-item {
-    width: 26px;
-    height: 26px;
+    width: 1.35vw;
+    height: 1.35vw;
+    padding: 0.16vw;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.sl-p__card-slider-color-item_active {
+    border-width: 1px;
+    border-style: solid;
+
+    pointer-events: none;
+}
+
+.sl-p__card-slider-color-circle {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
 }
 
 .sl-p__card-content p {
