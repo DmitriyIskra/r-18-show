@@ -936,13 +936,13 @@ ul.nav__list {
 
 .sl-p__card-wr-content {
     display: flex;
-    height: 0;
     width: 100%;
     margin-top: 1.09vw;
 
     flex-direction: column;
     align-items: center;
 
+    opacity: 0;
     overflow: hidden;
 }
 
@@ -972,7 +972,6 @@ ul.nav__list {
 
 .sl-p__size-list {
     display: flex;
-    /* height: 100%; */
     gap: 0.52vw;
 
     justify-content: center;
@@ -1051,10 +1050,15 @@ ul.nav__list {
 
     border-radius: 50%;
     background: #A59F9E;
+
+    cursor: pointer;
 }
 
 .sl-p__card-slider-pag-item_active {
     background: #3F3937;
+
+    cursor: default;
+    pointer-events: none;
 }
 
 .sl-p__card-content p {
