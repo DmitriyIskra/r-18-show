@@ -7,13 +7,13 @@
   <link href="css/style.css" rel="stylesheet"></head>
   <body>
     <header class="header">
-      <div class="header__wr-nav"><a class="logo" href="/"><img src="img/logo.png" alt="Логотип R18"></a>
+      <div class="header__wr-content"><a class="logo" href="/"><img src="img/logo.png" alt="Логотип R18"></a>
         <nav class="nav"> 
           <ul class="nav__list"> 
-            <li class="nav__item"> <a class="nav__item-link" href="#" title="Coffe">Кофе</a></li>
-            <li class="nav__item"> <a class="nav__item-link" href="#" title="Coffe">Мерч</a></li>
-            <li class="nav__item"> <a class="nav__item-link" href="#" title="Coffe">Аксессуары</a></li>
-            <li class="nav__item"> <a class="nav__item-link" href="#" title="Coffe">Контакты</a></li>
+            <li class="nav__item" data-item="coffee"><a class="nav__item-link" href="#" title="coffee">Кофе</a></li>
+            <li class="nav__item" data-item="merch"><a class="nav__item-link" href="#" title="merch">Мерч</a></li>
+            <li class="nav__item" data-item="accessories"><a class="nav__item-link" href="#" title="accessories">Аксессуары</a></li>
+            <li class="nav__item" data-item="contacts"><a class="nav__item-link" href="#" title="contacts">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -23,17 +23,17 @@
         <div class="slider-h__slides"> 
           <ul class="slider-h__slides-list"> 
             <li class="slider__slide-item">
-              <video controls="false" loop muted autoplay data-count="0">
+              <video controls loop muted autoplay data-count="0">
                 <source src="video/IMG_0981.MOV" type="video/mp4">
               </video>
             </li>
             <li class="slider__slide-item">
-              <video controls="false" loop muted autoplay data-count="1">
+              <video controls loop muted autoplay data-count="1">
                 <source src="video/IMG_0981.MOV" type="video/mp4">
               </video>
             </li>
             <li class="slider__slide-item">
-              <video controls="false" loop muted autoplay data-count="2">
+              <video controls loop muted autoplay data-count="2">
                 <source src="video/IMG_0981.MOV" type="video/mp4">
               </video>
             </li>
@@ -263,6 +263,80 @@
 </div>
         </div>
       </section>
+      <section class="contacts">
+        <div class="contacts__wr-title"> 
+          <div class="section-title__wr-title"> 
+            <h2 class="section-title__title">Контакты</h2>
+          </div>
+        </div>
+        <div class="contacts__wr-data"> 
+          <div class="contacts__map"> <img src="img/map.png" alt="Карта офиса R18"></div>
+          <div class="contacts__wr-address">
+            <div class="contacts__address"> 
+              <h3 class="contacts__address-title">Адрес</h3>
+              <p> <span>Береговая улица, 47Б</span><span>коттеджный поселок Спартак, село Быково,</span><span>Раменский городской округ, Московская область</span></p>
+            </div>
+            <div class="contacts__working-time">
+              <h3 class="contacts__address-title">Время работы: 09.00 - 18:00,</h3>
+              <p>по рабочим дням</p>
+            </div>
+            <div class="contacts__phone-number">
+              <div class="contacts__wr-phone-number">
+                <h3 class="contacts__phone-number-title">Для заказа и сотрудничества:</h3><a class="contacts__phone-number-link" href="tel:+79060449550" title="для заказа и сотрудничества">+7 (906) 044-95-50 </a>
+              </div>
+              <div class="button-to-top"> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107 113" fill="none">
+                  <g filter="url(#filter0_dddd_25_900)">
+                    <circle cx="64.5" cy="42.5" r="38" fill="#706966" stroke="white" stroke-width="3"></circle>
+                    <path d="M43.021 50.9678C41.6597 49.6088 41.6597 47.4054 43.021 46.046L60.0747 29.0363C62.7979 26.3203 67.2103 26.3214 69.9317 29.0387L86.9791 46.0585C88.3403 47.4179 88.3403 49.6213 86.9791 50.9807C85.6178 52.3398 83.4106 52.3398 82.0493 50.9807L67.4585 36.4132C66.0973 35.0541 63.8903 35.0541 62.5288 36.4132L47.9508 50.9678C46.5895 52.3272 44.3823 52.3272 43.021 50.9678Z" fill="white"></path>
+                  </g>
+                  <defs>
+                    <filter id="filter0_dddd_25_900" x="0" y="0" width="107" height="113" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feflood flood-opacity="0" result="BackgroundImageFix"></feflood>
+                      <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></fecolormatrix>
+                      <feoffset dx="-1" dy="1"></feoffset>
+                      <fegaussianblur stdDeviation="2"></fegaussianblur>
+                      <fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0"></fecolormatrix>
+                      <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_25_900"></feblend>
+                      <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></fecolormatrix>
+                      <feoffset dx="-4" dy="5"></feoffset>
+                      <fegaussianblur stdDeviation="3"></fegaussianblur>
+                      <fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"></fecolormatrix>
+                      <feblend mode="normal" in2="effect1_dropShadow_25_900" result="effect2_dropShadow_25_900"></feblend>
+                      <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></fecolormatrix>
+                      <feoffset dx="-8" dy="12"></feoffset>
+                      <fegaussianblur stdDeviation="4.5"></fegaussianblur>
+                      <fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"></fecolormatrix>
+                      <feblend mode="normal" in2="effect2_dropShadow_25_900" result="effect3_dropShadow_25_900"></feblend>
+                      <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></fecolormatrix>
+                      <feoffset dx="-15" dy="21"></feoffset>
+                      <fegaussianblur stdDeviation="5"></fegaussianblur>
+                      <fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0"></fecolormatrix>
+                      <feblend mode="normal" in2="effect3_dropShadow_25_900" result="effect4_dropShadow_25_900"></feblend>
+                      <feblend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_25_900" result="shape"></feblend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer"> 
+      <div class="footer__wr-content"><a class="logo" href="/"><img src="img/logo.png" alt="Логотип R18"></a>
+        <nav class="nav"> 
+          <ul class="nav__list"> 
+            <li class="nav__item" data-item="coffee"><a class="nav__item-link" href="#" title="coffee">Кофе</a></li>
+            <li class="nav__item" data-item="merch"><a class="nav__item-link" href="#" title="merch">Мерч</a></li>
+            <li class="nav__item" data-item="accessories"><a class="nav__item-link" href="#" title="accessories">Аксессуары</a></li>
+            <li class="nav__item" data-item="contacts"><a class="nav__item-link" href="#" title="contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__copyright">
+        <p>Все права защищены, 2024</p>
+      </div>
+    </footer>
   <script src="js/main.js"></script></body>
 </html>
