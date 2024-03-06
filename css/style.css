@@ -257,6 +257,27 @@ a {
     cursor: pointer;
 }
 
+.contacts__social-list {
+    display: flex;
+    gap: 1.61vw;
+}
+
+.contacts__social-item {
+    position: relative;
+
+    width: 2.08vw;
+    height: 2.08vw;
+}
+
+.contacts__social-item-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
 /* КОНТАКТЫ END */
 
 
@@ -680,7 +701,7 @@ a {
 }
 
 .slider-h__name-site-descr {
-    font-family: 'SofiaSans';
+    font-family: 'SofiaSans'; 
     font-size: 2.08vw;
     font-style: normal;
     font-weight: 300;
@@ -777,6 +798,9 @@ a {
 }
 
 .slider-h__nav-line-item {
+    position: absolute;
+    left: 0;
+
     height: 100%;
     width: 0;
 
@@ -901,13 +925,19 @@ ul.nav__list {
     left: 10%;
 
     font-family: "SofiaSans";
-    font-size: 0.83vw;
+    font-size: 1.04vw;
     font-weight: 700;
     text-transform: uppercase;
 
     color: #3F3937;
 
     opacity: 0;
+}
+
+.sl-p__card-price span {
+    margin-left: 0.2vw;
+
+    font-size: 0.73vw;
 }
 
 .sl-p__slide-item_active .sl-p__card-price {
