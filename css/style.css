@@ -82,7 +82,7 @@ a {
     padding-bottom: 11.28vw;
 
     background:no-repeat url(../img/roasteria-side.png), #483D41;
-    background-position: right 0.35vw top 8.6%;
+    background-position: right 0.35vw top 101.6vh;
     background-size: 11.41vw auto;
 }
 
@@ -98,6 +98,8 @@ a {
 
     flex-direction: column;
     align-items: center;
+
+    z-index: 0;
 }
 
 .coffee__wr-slider-top {
@@ -136,11 +138,15 @@ a {
 /* merch start */
 
 .merch {
+    position: relative;
+
     display: flex;
     padding-top: 6vw;
 
     flex-direction: column;
     align-items: center;
+
+    z-index: 1;
 }
 
 .merch__wr-slider {
@@ -156,11 +162,15 @@ a {
 /* accessories start */
 
 .accessories {
+    position: relative;
+
     display: flex;
     padding-top: 4.5vw;
 
     flex-direction: column;
     align-items: center;
+
+    z-index: 2;
 }
 
 .accessories__wr-slider {
@@ -314,6 +324,8 @@ a {
 }
 
 .footer__wr-content {
+    position: relative;
+
     display: flex;
     width: 85%;
     padding-bottom: 0.94vw;
@@ -642,50 +654,17 @@ a {
     width: 100%;
     height: 100%;
 
+    filter: drop-shadow(23px 24px 20px rgba(0, 0, 0, 0.6));
 
     object-fit: contain;
     object-position: center;
+
     opacity: 0;
     z-index: 1;
 }
 
 .sl-prod__big-img_visible {
     opacity: 1;
-}
-
-.sl-prod__big-img_deco {
-    position: absolute;
-    left: 50%;
-    
-    width: 80%;
-
-    box-shadow: 0.78vw 1.04vw 3.02vw 0.63vw rgba(0, 0, 0, 1);
-
-    transform: translate(-50%, -50%);
-
-    opacity: 0;
-}
-
-.sl-prod__big-img_deco_visible {
-    opacity: 1;
-}
-
-.sl-prod__big-img_espresso + .sl-prod__big-img_deco {
-    top: 50.5%;
-
-    height: 78.5%;
-}
-
-.sl-prod__big-img_filter + .sl-prod__big-img_deco {
-    top: 49.5%;
-
-    height: 37%;
-}
-
-.sl-prod__big-img_drip + .sl-prod__big-img_deco {
-    top: 50%;
-
-    height: 43%;
 }
 
 .sl-prod__wr-descr-preview {
@@ -854,6 +833,8 @@ a {
 
     width: 100%;
     height: 100%;
+
+    filter: drop-shadow(8px 7px 14px rgba(0, 0, 0, 0.55));
 
     object-fit: contain;
     object-position: center;
