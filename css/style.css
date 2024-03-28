@@ -954,21 +954,23 @@ a {
 .sl-prod .slider__arrow {
     position: absolute;
     /* top: 50%; */
-    bottom: 0;
+    /* bottom: 0; */
 
     display: block;
 
-    transform: translate(0, 64%); /*translate(0, -50%)*/
+    transform: translate(0, -50%); /*translate(0, 64%)*/
 }
 
 .sl-prod .slider__arrow-next {
-    /* right: -0.5%; */
-    left: 48.8%;
+    top: 39%;
+    right: 0; /*-0.5%*/
+    /* left: 48.8%; */
 }
 
 .sl-prod .slider__arrow-prev {
-    /* right: 5%; */
-    left: 36%;
+    top: 53%;
+    right: 0; /*5%*/
+    /* left: 36%; */
 }
 
 
@@ -1952,9 +1954,9 @@ ul.nav__list {
     overflow: hidden;
 }
 
-.nav__sub-menu-coffee-item {
-    
-}
+/* .nav__sub-menu-coffee-item {
+
+} */
 
 @media( max-width: 961px ) {
     .nav {
